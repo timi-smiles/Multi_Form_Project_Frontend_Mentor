@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend Mentor | Multi-step form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <container class="container">
+       <main class="inner_container">
+            <!-- Sidebar start -->
+           <div class="left_div">
+               <div class="steps_div" id="step_1btn">
+                    <button data-id="1" class="stepsBtn" id="section_number1">1</button>
+                    <div class="stepsInfo">
+                        <p>Step 1</p>
+                        <h3>Your info</h3>
+                    </div>
+               </div>
+               <div class="steps_div" id="step_2btn">
+                    <button data-id="2" class="stepsBtn" id="section_number2">2</button>
+                    <div class="stepsInfo">
+                        <p>Step 2</p>
+                        <h3>Select plan</h3>
+                    </div>
+               </div>
+               <div class="steps_div" id="step_3btn">
+                    <button data-id="3" class="stepsBtn" id="section_number3">3</button>
+                    <div class="stepsInfo">
+                        <p>Step 3</p>
+                        <h3>Add-ons</h3>
+                    </div>
+               </div>
+               <div class="steps_div" id="step_4btn">
+                    <button data-id="4" class="stepsBtn" id="section_number4">4</button>
+                    <div class="stepsInfo">
+                        <p>Step 4</p>
+                        <h3>Summary</h3>
+                    </div>
+                </div>
+           </div>
+            <!-- Sidebar end -->
+
+           <div class="right_div">
+                <!-- Step 1 start -->
+               <section class="steps_section" id="step_1">
+                   <div class="top">
+                        <h1>Personal info</h1>
+                        <p>Please provide your name, email address, and phone number.</p>
+                        <main>
+                            <form>
+                                <div class="input_div">
+                                    <div class="labels">
+                                        <label for="name">Name</label>
+                                        <label id="label_1" class="error_label"></label>
+                                    </div>
+                                    <input id="name" data-number="1" type="text" placeholder="e.g. Timilehin Ogunnowo">
+                                </div>
+                                <div class="input_div">
+                                    <div class="labels">
+                                        <label for="email">Email Address</label>
+                                        <label id="label_2" class="error_label"></label>
+                                    </div>
+                                    <input id="email" data-number="2" type="email" placeholder="e.g. timiworks21@gmail.com">
+                                </div>
+                                <div class="input_div">
+                                    <div class="labels">
+                                        <label for="tel">Phone Number</label>
+                                        <label id="label_3" class="error_label"></label> 
+                                    </div>
+                                    <input id="telNumber" data-number="3" type="tel" placeholder="e.g. +2348160808720">
+                                </div>
+                            </form>
+                        </main>
+                   </div>
+                   <footer>
+                        <button  id="nextBtn_1" data-id="1">Next Step</button>
+                   </footer>
+               </section>
+                <!-- Step 1 end -->
+
+                <!-- Step 2 start -->
+               <section class="steps_section" id="step_2" >
+                   <div class="top">
+                        <h1>Select your plan</h1>
+                        <p>You have the option of monthly or yearly billing.</p>
+                        <main>
+                            <div data-monthly="$9/mo" data-yearly="$90/yr" data-name="Arcade" class="planType" id="main-div1">
+                               <div>
+                                   <img src="./assets/images/icon-arcade.svg" alt="">
+                               </div>
+                                <div>
+                                    <h2>Arcade</h2>
+                                    <p class="monthly">$9/mo</p>
+                                    <p class="yearly">$90/yr</p>
+                                    <p class=" free yearly"> 2 months free</p>
+                                </div>
+                            </div>
+                            <div data-monthly= "$12/mo" data-yearly="$120/yr" data-name="Advanced" class="planType" id="main-div2">
+                                <div>
+                                    <img src="./assets/images/icon-advanced.svg" alt="">
+                                </div>
+                                <div>
+                                    <h2>Advanced</h2>
+                                    <p class="monthly">$12/mo</p>
+                                    <p class="yearly">$120/yr</p>
+                                    <p class=" free yearly"> 2 months free</p>
+                                </div>
+                            </div>
+                            <div data-monthly = "$15/mo" data-yearly = "$150/yr" data-name="Pro" class="planType" id="main-div3">
+                                <div>
+                                    <img src="./assets/images/icon-pro.svg" alt="">
+                                </div>
+                                <div>
+                                    <h2>Pro</h2>
+                                    <p class="monthly">$15/mo</p>
+                                    <p class="yearly">$150/yr</p>
+                                    <p class=" free yearly"> 2 months free</p>
+                                </div>
+                            </div>
+                        </main>
+                        <div class="payment_type">
+                            <p>Monthly</p>
+                            <div class="payment_toggle  ">
+                                <div class="circle"></div>
+                            </div>
+                            <p>Yearly</p>
+                        </div>
+                   </div>
+                   <footer>
+                       <button data-id="2" class="previous_btn" >Go Back</button>
+
+                        <button data-id="2" class="next_btn" >Next Step</button>
+                   </footer>
+               </section>
+                <!-- Step 2 end -->
+
+                <!-- Step 3 start -->
+               <section class="steps_section" id="step_3">
+                    <div class="top">
+                            <h1> Pick add-ons</h1>
+                            <p>Add-ons help enhance your gaming experience.</p>
+                            <main>
+                                <div id="mini_container1" class="mini_container">
+                                    <div data-monthly="+$1/mo" data-yearly="+$10/yr" data-name = "Online service" data-id="1" class="check_box">
+                                        <span class="check_mark"></span>
+                                    </div>
+                                    <div>
+                                        <h2> Online service</h2>
+                                        <p>Access to multiplayer games</p>
+                                    </div>
+                                    <div>
+                                        <p class="monthly">+$1/mo</p>
+                                        <p class="yearly">+$10/yr</p>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div id="mini_container2" class="mini_container">
+                                    <div data-monthly = "+$2/mo" data-yearly = "+$20/yr" data-name = "Larger storage" data-id="2" class="check_box">
+                                        <span class="check_mark"></span>
+                                    </div>
+                                    <div>
+                                        <h2>Larger storage</h2>
+                                        <p>Extra 1TB of cloud save</p>
+                                    </div>
+                                    <div>
+                                        <p class="monthly">+$2/mo</p>
+                                        <p class="yearly">+$20/yr</p>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div id="mini_container3" class="mini_container">
+                                    <div data-monthly = "+$2/mo" data-yearly = "+$20/yr" data-name = "Customizable Profile" data-id="3" class="check_box">
+                                        <span class="check_mark"></span>
+                                    </div>
+                                    <div>
+                                        <h2>Customizable Profile</h2>
+                                        <p>Custom theme on your profile</p>
+                                    </div>
+                                    <div>
+                                        <p class="monthly">+$2/mo</p>
+                                        <p class="yearly">+$20/yr</p>
+                                    </div>
+                                </div>
+                            </main>
+                    </div>
+                    <footer>
+                        <button data-id="3" class="previous_btn" >Previous Step</button>
+                        <button id="nextBtn_3" data-id="3" class="next_btn" >Next Step</button>
+                    </footer>
+               </section>
+                <!-- Step 3 end -->
+
+                <!-- Step 4 start -->
+               <section class="steps_section" id="step_4">
+                    <div class="top">
+                        <h1>Finishing up</h1>
+                        <p>Double-check everything looks OK before confirming.</p>
+                        <main>
+                            <div class="gray_area">
+                                <div class="plan">
+                                    <div>
+                                        <div style="display: flex;flex-direction:row">
+                                                <div class="planName"></div>
+                                                <div class="yearly">(Yearly)</div>
+                                                <div class="monthly">(Monthly) </div> 
+                                        </div>
+                                        <button class="change">Change</button>
+                                    </div>
+                                    <div class="planAmount"></div>
+                                </div>
+                                    <hr>
+                                    <div class="ad_selceted">
+                                    </div>
+                            </div>
+                            <div class="total">
+                                <div style="display: flex;flex-direction: row">
+                                        <p>Total</p>
+                                        <p class="monthly">(per month)</p>
+                                        <p class="yearly">(per year)</p>
+
+                                </div>
+                                <div style="display: flex;flex-direction: row">
+                                    <h4 class="totalAmount"></h4>
+                                    <h4 class="monthly">/mo</h4>
+                                    <h4 class="yearly">/yr</h4>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                   <footer>
+                        <button data-id="4" class="previous_btn" >Go Back</button>
+                        <button data-id="4" class="confirm " >Confirm</button>
+                   </footer>
+               </section>
+                <!-- Step 4 end -->
+
+                <!-- Step 5 start -->
+               <section class="steps_section" id="step_5">
+                   <main>
+                       <img src="./assets/images/icon-thank-you.svg" alt="">
+                       <h2>Thank you!</h2>
+                       <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
+                   </main>
+               </section>
+               <!-- Step 5 end -->
+           </div>
+        </main>
+    </container>
+</body>
+</html>

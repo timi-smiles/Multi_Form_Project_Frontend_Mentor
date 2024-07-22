@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    background: hsl(206, 94%, 87%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0
+}
+
+/*  */
+
+.next_btn{
+    color: white;
+    background: hsl(213, 96%, 18%);
+    border-radius: 5px;
+    padding: 1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in all
+}
+
+.next_btn:hover{
+    background:hsl(213, 99%, 30%);
+}
+
+#nextBtn_1{
+    color: white;
+    background: hsl(213, 96%, 18%);
+    border-radius: 5px;
+    padding: 1em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in all
+}
+
+#nextBtn_1:hover{
+    background:hsl(213, 99%, 30%);
+}
+
+.previous_btn{
+    background: transparent;
+    border: none;
+    color: hsl(213, 96%, 18%);
+    font-weight: bold;
+    cursor: pointer
+}
+/*  */
+
+.container .inner_container{
+    width: 60%;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 15px
+}
+
+/* Sidebar start */
+.container .inner_container .left_div{
+    background: url('./assets/images/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 40px 0 0 30px
+}
+
+.container .inner_container .left_div .steps_div{
+    display: flex;
+    justify-content: baseline;
+    margin-bottom: 1.5em
+}
+
+.container .inner_container .left_div .steps_div .stepsBtn{
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    background:transparent;
+    outline: none
+}
+
+.container .inner_container .left_div .steps_div .stepsBtn:hover{
+    background: hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%)
+}
+
+
+.container .inner_container .left_div .steps_div div{
+    margin-left: 1em
+}
+
+.container .inner_container .left_div .steps_div div p , .container .inner_container .left_div .steps_div div h3{
+    color: white
+}
+
+.container .inner_container .left_div .steps_div div p{
+    opacity: 0.6
+}
+/* Sidebar end */
+
+/* Steps start */
+
+.container .inner_container .right_div{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem
+} 
+
+.parent_checkbox{
+    border:1px solid hsl(213, 96%, 18%);background:hsl(206, 94%, 87%);
+}
+
+.container .inner_container .right_div .steps_section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: relative;
+    padding-top: 1em
+}
+
+.container .inner_container .right_div .steps_section .yearly{
+    display: none
+}
+
+/* Step 1 start */
+
+.container .inner_container .right_div .steps_section:first-child{
+    display: block
+}
+
+.container .inner_container .right_div .steps_section h1{
+    color: hsl(213, 96%, 18%);
+    font-size: 2.3rem;
+}
+
+.container .inner_container .right_div .steps_section p{
+    color: #000;
+    opacity: 0.5;
+    margin-top: 0.4em
+}
+
+.container .inner_container .right_div .steps_section main{
+    margin-top: 2em
+}
+
+.container .inner_container .right_div .steps_section:first-child main .input_div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em
+}
+
+.container .inner_container .right_div .steps_section:first-child main .input_div .labels{
+    display: flex;
+    justify-content: space-between
+}
+.container .inner_container .right_div .steps_section:first-child main .input_div .labels .error_label{
+    color: hsl(354, 84%, 57%)
+}
+
+.container .inner_container .right_div .steps_section:first-child main .input_div label{
+    color: hsl(213, 96%, 18%);
+    font-weight: 600;
+    margin-bottom: 0.5em
+}
+
+.container .inner_container .right_div .steps_section:first-child main .input_div input{
+    border: 1px solid hsla(213, 98%, 18%, 0.136);
+    border-radius: 5px;
+    height: 45px;
+    padding-left: 10px;
+    color: hsl(213, 96%, 18%);
+    font-weight: bold;
+    outline: none
+}
+
+.container .inner_container .right_div .steps_section:first-child main .input_div input::placeholder{
+    color: hsla(213, 100%, 18%, 0.489)
+}
+
+.container .inner_container .right_div .steps_section:first-child footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2em
+}
+
+/* Step 1 end */
+
+/* Step 2 start */
+
+.container .inner_container .right_div .steps_section:nth-child(2) main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) main .planType{
+    border: 1px solid rgba(0,0,0,0.3);
+    width: 100%;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+    padding: 12px;
+    transition: 0.5s ease-in all;
+    cursor: pointer;
+}
+
+.selectedPlan{
+    background: hsl(206, 61%, 91%);
+    border: 1px solid hsl(0, 100%, 18%)
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) main .planType:hover{
+    background: hsl(206, 61%, 91%);
+    border: 1px solid hsl(213, 96%, 18%)
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) main .planType img{
+    height: 30px;
+    width: 30px
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) main .planType h2{
+    margin-top: 2em;
+    font-size: 1.0rem;
+    color: hsl(213, 96%, 18%);
+    font-weight: bold
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) main .planType p{
+    font-size: 0.9rem
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) main .planType .free{
+    color: hsl(213, 96%, 18%);
+    font-weight: bold;
+    opacity: 1;
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) .payment_type{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: rgba(226, 224, 224, 0.142);
+    margin-top: 2em;
+    padding: 0.7em 0;
+    border-radius: 5px
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) .payment_type p:nth-child(1){
+    margin-right: 0.6em;
+    font-weight: bold
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) .payment_type p:last-child{
+    margin-left: 0.6em;
+    font-weight: bold
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) .payment_type .payment_toggle{
+    background: hsl(213, 96%, 18%);
+    width: 50px;
+    padding: 0.7em 0;
+    border-radius: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle_paymentType{
+    background: hsl(213, 96%, 18%);
+    width: 50px;
+    padding: 0.7em 0;
+    border-radius: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) .payment_type .circle{
+    height: 15px;
+    width: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container .inner_container .right_div .steps_section:nth-child(2) footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em
+}
+
+/* Step 2 end */
+
+/* Step 3 start */
+
+.container .inner_container .right_div .steps_section:nth-child(3) .mini_container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    border-radius: 4px;
+    border: 1px solid hsla(213, 98%, 18%, 0.136);
+    margin-bottom: 1em;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in
+}
+
+.container .inner_container .right_div .steps_section:nth-child(3) .mini_container:hover{
+    border:  1px solid hsl(213, 96%, 18%)
+}
+
+.container .inner_container .right_div .steps_section:nth-child(3) .mini_container div{
+    margin: auto 0
+}
+
+.container .inner_container .right_div .steps_section:nth-child(3) .mini_container .check_box{
+    border-radius: 4px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid hsla(213, 98%, 18%, 0.136);
+    cursor: pointer
+}
+
+.clickedCheckbtn{
+    height: 25px;
+    width: 25px;
+    background: hsl(243, 100%, 62%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .inner_container .right_div .steps_section:nth-child(3) .mini_container .check_box .check_mark{
+    height: 9px;
+    width: 15px;
+    border-left: 3px solid white;
+    border-bottom:  3px solid white;
+    transform: rotate(-40deg);
+    margin-bottom: 2px
+}
+
+.container .inner_container .right_div .steps_section:nth-child(3) .mini_container div:nth-child(2) h2{
+    font-size: 1rem;
+    color: hsl(213, 96%, 18%);
+    font-weight: 900
+}
+
+.container .inner_container .right_div .steps_section:nth-child(3) .mini_container div:nth-child(2) p{
+    font-size: 0.9rem;
+    font-weight: 900
+}
+
+.container .inner_container .right_div .steps_section:nth-child(3) .mini_container div:nth-child(3) p{
+    color:hsl(243, 100%, 62%);
+    font-weight: bold
+}
+
+.container .inner_container .right_div .steps_section:nth-child(3) footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em
+}
+
+/* Step 3 end */
+
+/* Step 4 start */
+
+.container .inner_container .right_div .steps_section:nth-child(4) main .gray_area{
+    background: rgba(219, 218, 218, 0.272);
+    border-radius: 4px;
+    padding: 1em
+}
+
+.container .inner_container .right_div .steps_section:nth-child(4) main .gray_area .plan{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em
+}
+
+.container .inner_container .right_div .steps_section:nth-child(4) main .gray_area .plan .change{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.265);
+    color: rgba(0, 0, 0, 0.265);
+    cursor: pointer;
+}
+
+.container .inner_container .right_div .steps_section:nth-child(4) main .gray_area hr{
+    border: 0.2px solid rgba(0, 0, 0, 0.156)
+}
+
+.container .inner_container .right_div .steps_section:nth-child(4) main .ad_selceted{
+    padding-top: 1em
+}
+
+.container .inner_container .right_div .steps_section:nth-child(4) main .ad_selceted .ad_ons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em
+}
+
+.container .inner_container .right_div .steps_section:nth-child(4) main .total{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em
+}
+
+.container .inner_container .right_div .steps_section:nth-child(4) main .total h4{
+    color: hsl(243, 100%, 62%);
+}
+
+.container .inner_container .right_div .steps_section:nth-child(4) footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em
+}
+
+.container .inner_container .right_div .steps_section:nth-child(4) footer .confirm{
+    color: white;
+    background: hsl(243, 100%, 62%);
+    border-radius: 5px;
+    padding: 1em 1.8em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in all
+}
+
+/* Step 4 end  */
+
+/* Step 5 stary */
+
+.container .inner_container .right_div .steps_section:nth-child(5) main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin:0em;
+    min-height: 70vh
+}
+
+.container .inner_container .right_div .steps_section:nth-child(5) main h2, .container .inner_container .right_div .steps_section:nth-child(5) main p {
+    text-align: center
+}
+
+.container .inner_container .right_div .steps_section:nth-child(5) main h2{
+    margin-top: 0.7em;
+    color: hsl(213, 96%, 18%);
+    font-weight: 900;
+    font-size: 2rem
+}
+
+.container .inner_container .right_div .steps_section:nth-child(5) main p{
+    line-height: 1.2em
+}
+
+/* Step 5 end  */
+
+
+@media (max-width:1150px){
+    .container .inner_container{
+        width: 80%;
+        min-height: 70vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 15px
+    }
+}
+
+
+/* mobile device */
+@media (max-width:768px){
+
+    .error_label, label{
+       font-size: 0.9em
+    }
+
+    .container{
+        min-height: 100vh;
+        display: block;
+        position: relative;
+        padding: 0
+    }
+
+    .container .inner_container{
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 0px;
+        padding: 0px;
+        background: hsl(206, 94%, 87%);
+    }
+
+    /* Sidebar start */
+    .container .inner_container .left_div{
+        background: url('./assets/images/bg-sidebar-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: row;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        padding: 3em 0
+    }
+
+    .container .inner_container .left_div .steps_div{
+        display: flex;
+        margin: 0 0.8em
+    }
+
+    .container .inner_container .left_div .steps_div .stepsInfo{
+        display: none
+    }
+
+    .container .inner_container .right_div .steps_section{
+        position: static;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        padding: 1.5em;
+        width: 90%;
+        border-radius: 7px;
+        margin-bottom: 6em;
+        margin-top: -5em;
+        min-height: 75vh
+    }
+
+    .container .inner_container .right_div .steps_section footer{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+        background: white;
+    }
+
+    .container .inner_container .right_div .steps_section:first-child footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1em 0.8em;
+    }
+
+    .container .inner_container .right_div .steps_section:nth-child(2) footer,.container .inner_container .right_div .steps_section:nth-child(3) footer,.container .inner_container .right_div .steps_section:nth-child(4) footer{
+        margin-bottom: 0em;
+        width: 100%;
+        align-items: center;
+        padding: 1em 0.8em;
+    }
+
+    .container .inner_container .right_div .steps_section:nth-child(2) main{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column
+    }
+
+    .container .inner_container .right_div .steps_section:nth-child(2) main .planType{
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 5fr;
+        margin-bottom: 1em
+    }
+
+    .container .inner_container .right_div .steps_section:nth-child(2) main .planType div:first-child{
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .container .inner_container .right_div .steps_section:nth-child(2) main .planType div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom:1em
+    }
+
+    .container .inner_container .right_div .steps_section:nth-child(5) main p{
+        line-height: 1.3em
+    }
+}
+
+@media (max-width:768px) and (orientation:landscape){
+    .container .inner_container .left_div{
+        background: url('./assets/images/bg-sidebar-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 35vh;
+    }
+
+    .container .inner_container .right_div .steps_section{
+        margin-top: 0em;
+    }
+}
